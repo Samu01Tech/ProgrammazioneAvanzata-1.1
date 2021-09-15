@@ -8,6 +8,7 @@ class Persona{
     private:
         string nome, cognome;
         int eta;   
+        int* dati;
     public:
         Persona(string n, string c, int e=0);
         Persona();
@@ -19,5 +20,7 @@ class Persona{
         int getEta() const {return eta;};
         void stampa() const;
 };
-void stampa1(const Persona p);//const non necessario
+void stampa1(Persona p);//per copia - const non necessario
+void stampa2(const Persona* pp);//per indirizzo
+void stampa3(const Persona &p);//per riferimento
 #endif

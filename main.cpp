@@ -10,6 +10,8 @@ int main() {
     Persona p3;
 
     stampa1(p1);
+    stampa2(&p2);
+    stampa3(p3);
     
     return 0;
 }
